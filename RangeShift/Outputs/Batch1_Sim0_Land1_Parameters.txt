@@ -1,0 +1,100 @@
+RangeShifter 2.0 
+================    =====================
+
+BATCH MODE 	yes
+SEED 	1135153204
+REPLICATES 	5
+YEARS 	10
+REPRODUCTIVE SEASONS / YEAR	1
+CELL-BASED MODEL
+BOUNDARIES 	reflective
+
+LANDSCAPE:	imported map
+TYPE: 	habitat codes
+FILE NAME: Spain_EML_map_mink_3cl.asc
+No. HABITATS:	3
+RESOLUTION (m): 	5000
+DIMENSIONS:  X 427  Y 343
+AVAILABLE:   min.X 0 min.Y 0  max.X 426 max.Y 342
+
+SPECIES DISTRIBUTION LOADED: 	yes
+RESOLUTION (m)	5000
+FILE NAME: occ_dist_2019_5km.asc
+
+ENVIRONMENTAL GRADIENT:	 no
+ENVIRONMENTAL STOCHASTICITY:	no
+LOCAL EXTINCTION PROBABILITY:	0.0
+
+SPECIES' PARAMETERS.
+REPRODUCTION:
+TYPE: Asexual / Only female model
+STAGE STRUCTURE:	yes
+PROBABILITY OF REPRODUCING IN SUBSEQUENT SEASONS	1
+No. OF REP. SEASONS BEFORE SUBSEQUENT REPRODUCTIONS	0
+No. STAGES	2
+MAX. AGE	10
+MIN. AGES:
+stage	0:	0	years
+stage	1:	0	years
+FECUNDITIES:
+stage	0:	0
+stage	1:	0.6
+DEVELOPMENT PROB.:
+stage	0:	1
+stage	1:	0
+SURVIVAL PROB.:
+stage	0:	0.9
+stage	1:	0.75
+SCHEDULING OF SURVIVAL: Annually
+DENSITY-DEPENDENCE IN FECUNDITY:	yes
+not stage-dependent
+DENSITY-DEPENDENCE IN DEVELOPMENT:	no
+DENSITY-DEPENDENCE IN SURVIVAL:		no
+
+HABITAT SPECIFIC 1/b:
+Habitat 1: 	1/b 0
+Habitat 2: 	1/b 0.0012
+Habitat 3: 	1/b 0.002
+
+DISPERSAL - EMIGRATION:	density-dependent
+SEX-DEPENDENT:   no
+STAGE-DEPENDENT: yes
+INDIVIDUAL VARIABILITY: no
+stage 0: 	D0: 1 	alpha: 10 	beta: 1
+stage 1: 	D0: 0 	alpha: 0 	beta: 0
+
+DISPERSAL - TRANSFER: 	dispersal kernel
+TYPE: 	negative exponential
+SEX-DEPENDENT:   no
+STAGE-DEPENDENT: no
+INDIVIDUAL VARIABILITY: no
+MEAN DISTANCE I: 	40000
+DISPERSAL MORTALITY:   constant
+MORTALITY PROBABILITY: 0
+
+DISPERSAL - SETTLEMENT:
+SEX-DEPENDENT:   no
+STAGE-DEPENDENT: no
+IF THE ARRIVAL CELL/PATCH IS UNSUITABLE: die
+MATING REQUIREMENTS: no
+
+GENETICS:
+No. of variable traits:  0
+
+INITIALISATION CONDITIONS:
+From species distribution: 	
+all presence cells/patches
+INITIAL NO. OF INDIVIDUALS: 	2 individuals per cell
+INITIAL STAGE PROPORTIONS:
+stage 1: 1 	
+Initial age distribution: lowest possible age
+GEOGRAPHICAL CONSTRAINTS (cell numbers): 
+min X: 0 max X: 426
+min Y: 0 max Y: 342
+
+OUTPUTS:
+Range - every 1 year
+Occupancy - every 1 year
+Populations - every 1 year
+SAVE MAPS: no
+SAVE TRAITS MAPS: no
